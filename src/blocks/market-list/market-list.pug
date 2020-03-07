@@ -1,0 +1,184 @@
+include ../../core/bemto
+
+mixin market-item(name)
+    // .market-item
+    +b("div")(class="market-item")
+        +e("img")(src="images/etherium.svg" class="image lazyload")
+        +e("span")(class="name")= name
+    // #.market-item
+
+// .market-list
++b("div")(class="market-list")
+    +e("div")(class="header")
+        +e("div")(class="current-currency")
+            +market-item("ETH / USDT")
+
+        +e("button")(type="button", class="button") Market
+
+    +e("div")(class="body _invisible")
+        +e("input")(type="text", placeholder="Search", class="search")
+        +e("div")(class="tabs")
+            +e("button")(type="button", target-id="market-list-eth", class="tab _selected") ETH
+            +e("button")(type="button", target-id="market-list-usdt", class="tab") USDT
+            +e("button")(type="button", target-id="market-list-btc", class="tab") BTC
+
+        +e("div")(class="render")
+            +e("div")(id="market-list-eth", class="content")
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+            +e("div")(id="market-list-usdt", class="content _invisible")
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+            +e("div")(id="market-list-btc", class="content _invisible")
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+
+                +e("div")(class="bunch")
+                    +e("div")(class="currency")
+                        +market-item("ETH / USDT")
+
+                    +e("div")(class="section")
+                        +e("span")(class="value _green") +18.49%
+                        +e("span")(class="label") 24h Change
+
+                    +e("div")(class="section")
+                        +e("span")(class="value") 273.89
+                        +e("span")(class="label") Last price
+// #.market-list
