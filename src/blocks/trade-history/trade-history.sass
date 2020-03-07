@@ -1,0 +1,87 @@
+@import "../../sass/_mixins/_rem"
+@import "../../sass/variables"
+
+.trade-history
+  background-color: #131E2A
+
+.trade-history__tabs
+  width: 100%
+
+  padding: 12px 16px
+  box-sizing: border-box
+
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.trade-history__tab
+  display: inline-block
+  padding: 0
+
+  border: none
+  border-radius: 0
+  background-color: transparent
+
+  color: #697D94
+  font-size: rem(14px)
+  font-weight: 600
+
+  outline: none
+  user-select: none
+  cursor: pointer
+
+  transition: .1s ease-out
+
+  &:not(.trade-history__tab_selected):hover
+    color: #7b93ae
+
+  &:focus
+    box-shadow: 0 4px 0 0 #131E2A, 0 6px 0 0 #7b93ae
+
+  &_selected
+    color: $color-white
+
+  &:not(:last-child)
+    margin-right: 32px
+
+.trade-history__render
+  padding: 0 16px 16px 16px
+  box-sizing: border-box
+
+.trade-history__content
+  &_invisible
+    display: none
+
+.trade-history__table
+  width: 100%
+  text-align: left
+
+  thead th
+    padding: 12px 0
+
+    color: #697D94
+    font-size: rem(10px)
+    font-weight: 500
+    line-height: 12px
+    text-transform: uppercase
+
+  tbody tr:not(:last-child)
+    border-bottom: 1px solid #1B2A3B
+
+  tbody th
+    padding: 12px 0
+
+    color: $color-white
+    font-size: rem(12px)
+    font-weight: 500
+    line-height: 12px
+
+.trade-history__th
+  &_green
+    color: $color-green !important
+
+  &_red
+    color: $color-red !important
+
+  &_dark
+    color: #697D94 !important
