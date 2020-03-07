@@ -1,0 +1,45 @@
+@import "../../sass/variables"
+
+.header
+  width: 100%
+  height: 56px
+
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+  padding: 10px 16px
+  box-sizing: border-box
+
+  background-color: #0D151D
+
+.header__homepage
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  border-radius: 2px
+  text-decoration: none
+  outline: none
+
+  &:focus
+    box-shadow: 0 0 0 4px #0D151D, 0 0 0 7px #15222e
+
+.header__sitename
+  display: inline-block
+
+  padding-left: 8px
+  margin-left: 8px
+
+  color: $color-white
+  line-height: 20px
+
+  border-left: 1px solid rgba($color-white, .2)
+
+.header__auth
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  .button:not(:first-child)
+    margin-left: 8px
