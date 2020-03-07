@@ -1,0 +1,97 @@
+include ../../core/bemto
+
+// .trade-history
++b("div")(class="trade-history")
+    +e("div")(class="tabs")
+        +e("button")(type="button", target-id="tab-history-open-orders", class="tab _selected") Open Orders
+        +e("button")(type="button", target-id="tab-history-order-history", class="tab") Order History
+
+    +e("div")(class="render")
+        +e("div")(id="tab-history-open-orders", class="content _invisible")
+            +e("table")(class="table")
+                +e("thead")
+                    +e("tr")
+                        +e("th") Side
+                        +e("th") Pair
+                        +e("th") AVG
+                        +e("th") Price
+                        +e("th") Amount
+                        +e("th") Total
+                        +e("th") Date
+                        +e("th") Status
+
+                +e("tbody")
+                    +e("tr")
+                        +e("th")(class="th _red") Sell
+                        +e("th") ETH / USDT
+                        +e("th") 0.00044760
+                        +e("th") Market
+                        +e("th") 8.0
+                        +e("th") 2191.12 USDT
+                        +e("th")(class="th _dark") Mar 3, 2020 09:58:16
+                        +e("th")(class="th _green") Complete
+
+                    +e("tr")
+                        +e("th")(class="th _green") Buy
+                        +e("th") ETH / USDT
+                        +e("th") 0.00044760
+                        +e("th") Market
+                        +e("th") 8.0
+                        +e("th") 2191.12 USDT
+                        +e("th")(class="th _dark") Mar 3, 2020 09:58:16
+                        +e("th")(class="th _green") Complete
+
+                    +e("tr")
+                        +e("th")(class="th _red") Sell
+                        +e("th") ETH / USDT
+                        +e("th") 0.00044760
+                        +e("th") Market
+                        +e("th") 8.0
+                        +e("th") 2191.12 USDT
+                        +e("th")(class="th _dark") Mar 3, 2020 09:58:16
+                        +e("th")(class="th _green") Complete
+
+        +e("div")(id="tab-history-order-history", class="content")
+            +e("table")(class="table")
+                +e("thead")
+                    +e("tr")
+                        +e("th") Side
+                        +e("th") Pair
+                        +e("th") AVG
+                        +e("th") Price
+                        +e("th") Amount
+                        +e("th") Total
+                        +e("th") Date
+                        +e("th") Status
+
+                +e("tbody")
+                    +e("tr")
+                        +e("th")(class="th _red") Sell
+                        +e("th") ETH / USDT
+                        +e("th") 0.00044760
+                        +e("th") Market
+                        +e("th") 8.0
+                        +e("th") 2191.12 USDT
+                        +e("th")(class="th _dark") Mar 3, 2020 09:58:16
+                        +e("th")(class="th _green") Complete
+
+                    +e("tr")
+                        +e("th")(class="th _green") Buy
+                        +e("th") ETH / USDT
+                        +e("th") 0.00044760
+                        +e("th") Market
+                        +e("th") 8.0
+                        +e("th") 2191.12 USDT
+                        +e("th")(class="th _dark") Mar 3, 2020 09:58:16
+                        +e("th")(class="th _green") Complete
+
+                    +e("tr")
+                        +e("th")(class="th _red") Sell
+                        +e("th") ETH / USDT
+                        +e("th") 0.00044760
+                        +e("th") Market
+                        +e("th") 8.0
+                        +e("th") 2191.12 USDT
+                        +e("th")(class="th _dark") Mar 3, 2020 09:58:16
+                        +e("th")(class="th _green") Complete
+// #.trade-history
