@@ -1,0 +1,48 @@
+@import "../../sass/_mixins/_rem"
+@import "../../sass/variables"
+
+.bunch-information
+  width: 100%
+  height: 56px
+
+  display: flex
+  flex-direction: row
+  align-items: center
+s
+  padding: 0 32px
+  box-sizing: border-box
+
+  background-color: #131E2A
+
+.bunch-information__item
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  &:not(:last-child)
+    margin-right: 48px
+
+.bunch-information__value
+  color: $color-white
+  font-size: rem(14px)
+  font-weight: 500
+  line-height: 20px
+
+  span
+    color: #697D94
+    font-size: rem(12px)
+
+  &_green
+    color: $color-green
+
+  &_red
+    color: $color-red
+
+.bunch-information__label
+  color: #697D94
+  font-size: rem(10px)
+  font-weight: 500
+  line-height: 12px
+
+  letter-spacing: 0.05em
+  text-transform: uppercase
