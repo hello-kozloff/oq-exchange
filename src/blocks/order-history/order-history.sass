@@ -1,10 +1,10 @@
 @import "../../sass/_mixins/_rem"
 @import "../../sass/variables"
 
-.trade-history
+.order-history
   background-color: #131E2A
 
-.trade-history__tabs
+.order-history__tabs
   width: 100%
 
   padding: 12px 16px
@@ -14,7 +14,7 @@
   flex-direction: row
   align-items: center
 
-.trade-history__tab
+.order-history__tab
   display: inline-block
   padding: 0
 
@@ -32,7 +32,7 @@
 
   transition: .1s ease-out
 
-  &:not(.trade-history__tab_selected):hover
+  &:not(.order-history__tab_selected):hover
     color: #7b93ae
 
   &:focus
@@ -44,15 +44,15 @@
   &:not(:last-child)
     margin-right: 32px
 
-.trade-history__render
+.order-history__render
   padding: 0 16px 16px 16px
   box-sizing: border-box
 
-.trade-history__content
+.order-history__content
   &_invisible
     display: none
 
-.trade-history__table
+.order-history__table
   width: 100%
   text-align: left
 
@@ -76,7 +76,7 @@
     font-weight: 500
     line-height: 12px
 
-.trade-history__th
+.order-history__th
   &_green
     color: $color-green !important
 
