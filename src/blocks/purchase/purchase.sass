@@ -1,0 +1,136 @@
+@import "../../sass/_mixins/_rem"
+@import "../../sass/variables"
+
+.purchase
+  height: 100%
+  background-color: #131E2A
+
+  padding: 14px 8px 40px 8px
+  box-sizing: border-box
+
+.purchase__tabs
+  padding: 0 16px
+
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.purchase__tab
+  display: inline-block
+  padding: 0
+
+  border: none
+  border-radius: 0
+  background-color: transparent
+
+  color: #697D94
+  font-size: rem(14px)
+  font-weight: 600
+  line-height: 30px
+
+  outline: none
+  user-select: none
+  cursor: pointer
+
+  transition: .1s ease-out
+
+  &:not(.trade-history__tab_selected):hover
+    color: #7b93ae
+
+  &:focus
+    box-shadow: 0 2px 0 0 #131E2A, 0 4px 0 0 #7b93ae
+
+  &_selected
+    color: $color-white
+    box-shadow: 0 2px 0 0 #131E2A, 0 4px 0 0 #697D94
+
+  &:not(:last-child)
+    margin-right: 24px
+
+.purchase__render
+  padding-top: 16px
+  box-sizing: border-box
+
+.purchase__content
+  display: flex
+
+  &_invisible
+    display: none
+
+.purchase__form
+  width: 100%
+
+  padding: 0 16px
+  box-sizing: border-box
+
+  .button
+    width: 100%
+    text-align: center
+    display: block
+
+.purchase__header
+  padding: 12px 0
+  margin-bottom: 4px
+
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+
+.purchase__label
+  color: $color-white
+  font-size: rem(14px)
+  font-weight: 600
+  line-height: 20px
+
+.purchase__balance
+  color: $color-white
+  font-size: rem(12px)
+  font-weight: 600
+  line-height: 20px
+
+.purchase__row
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+
+  &:not(:last-child)
+    margin-bottom: 4px
+
+  &:last-child
+    margin-top: 20px
+    margin-bottom: 8px
+
+.purchase__parameter
+  color: #697D94
+  font-size: rem(12px)
+  font-weight: 600
+  line-height: 20px
+
+.purchase__input
+  max-width: 164px
+
+.purchase__fee
+  color: $color-white
+  font-size: rem(12px)
+  font-weight: 500
+  line-height: 24px
+
+.purchase__percents
+  max-width: 164px
+  width: 100%
+
+  margin-top: 1px
+  margin-left: auto
+  margin-bottom: 4px
+
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.purchase__percent
+  width: 100%
+
+  &:not(:last-child)
+    margin-right: 1px
