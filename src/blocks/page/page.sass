@@ -40,10 +40,17 @@
     box-sizing: border-box
 
   .page__trade
-    height: 100%
+    height: calc(100% - 385px)
+    min-height: 250px
 
     display: flex
     flex-direction: row
+
+    border-top: 2px solid #0D151D
+    border-bottom: 2px solid #0D151D
+    box-sizing: border-box
+
+    flex-shrink: 0
 
   .page__order-book,
   .page__trade-history
@@ -51,4 +58,5 @@
 
   .page__purchase
     width: 100%
-    max-height: 385px
+    height: 385px
+    flex-shrink: 0
