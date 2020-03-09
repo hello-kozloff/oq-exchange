@@ -1,22 +1,22 @@
 $(document).ready(() => {
 
-  $(".trade-history__tab").on("click", function (e) {
+  $(".order-history__tab").on("click", function (e) {
     e.preventDefault();
 
     // Get target id.
     const targetId = $(this).attr("target-id");
 
     // Hide all content.
-    $(".trade-history__content").addClass("trade-history__content_invisible");
+    $(".order-history__content").addClass("order-history__content_invisible");
 
     // Show current content.
-    $(`#${targetId}`).removeClass("trade-history__content_invisible");
+    $(`#${targetId}`).removeClass("order-history__content_invisible");
 
     // Remove selected in all tabs.
-    $(".trade-history__tab").removeClass("trade-history__tab_selected");
+    $(".order-history__tab").removeClass("order-history__tab_selected");
 
     // Add selected in current tab.
-    $(this).addClass("trade-history__tab_selected");
+    $(this).addClass("order-history__tab_selected");
   });
 
 });
