@@ -1,0 +1,178 @@
+include ../../core/bemto
+include ../input/input
+include ../radio/radio
+
+// .purchase
++b("div")(class="purchase")
+    +e("div")(class="tabs")
+        +e("button")(type="button", target-id="tab-purchase-limit" class="tab _selected") Limit
+        +e("button")(type="button", target-id="tab-purchase-market" class="tab") Market
+
+    +e("div")(class="render")
+        +e("div")(id="tab-purchase-limit", class="content")
+            +e("form")(class="form")
+                +e("div")(class="header")
+                    +e("span")(class="label") Buy ETH
+                    +e("span")(class="balance") 12,470.00 USDT
+
+                +e("div")(class="grid")
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Price
+                        +e("div")(class="input")
+                            +input(null, "0", "USDT")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Amount
+                        +e("div")(class="input")
+                            +input(null, "0", "ETH")
+
+                    +e("div")(class="row")
+                        +e("div")(class="percents")
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "25%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "50%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "75%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "100%")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Total
+                        +e("div")(class="input")
+                            +input("0.00", "0", "USDT")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Fee
+                        +e("div")(class="fee") 0.00 USDT
+
+                +b("button")(type="submit", class="button button_theme_green") Buy ETH
+
+            +e("form")(class="form")
+                +e("div")(class="header")
+                    +e("span")(class="label") Sell ETH
+                    +e("span")(class="balance") 12,470.00 USDT
+
+                +e("div")(class="grid")
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Price
+                        +e("div")(class="input")
+                            +input(null, "0", "USDT")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Amount
+                        +e("div")(class="input")
+                            +input(null, "0", "ETH")
+
+                    +e("div")(class="row")
+                        +e("div")(class="percents")
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "25%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "50%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "75%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "100%")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Total
+                        +e("div")(class="input")
+                            +input("0.00", "0", "USDT")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Fee
+                        +e("div")(class="fee") 0.00 USDT
+
+                +b("button")(type="submit", class="button button_theme_red") Sell ETH
+
+        +e("div")(id="tab-purchase-market", class="content _invisible")
+            +e("form")(class="form")
+                +e("div")(class="header")
+                    +e("span")(class="label") Buy ETH
+                    +e("span")(class="balance") 12,470.00 USDT
+
+                +e("div")(class="grid")
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Price
+                        +e("div")(class="input")
+                            +input(null, "0", "USDT", true, true)
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Amount
+                        +e("div")(class="input")
+                            +input(null, "0", "ETH")
+
+                    +e("div")(class="row")
+                        +e("div")(class="percents")
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "25%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "50%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "75%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "100%")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Total
+                        +e("div")(class="input")
+                            +input("0.00", "0", "USDT")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Fee
+                        +e("div")(class="fee") 0.00 USDT
+
+                +b("button")(type="submit", class="button button_theme_green") Buy ETH
+
+            +e("form")(class="form")
+                +e("div")(class="header")
+                    +e("span")(class="label") Sell ETH
+                    +e("span")(class="balance") 12,470.00 USDT
+
+                +e("div")(class="grid")
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Price
+                        +e("div")(class="input")
+                            +input(null, "0", "USDT", true, true)
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Amount
+                        +e("div")(class="input")
+                            +input(null, "0", "ETH")
+
+                    +e("div")(class="row")
+                        +e("div")(class="percents")
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "25%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "50%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "75%")
+
+                            +e("div")(class="percent")
+                                +radio("buy-amount-percent", "100%")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Total
+                        +e("div")(class="input")
+                            +input("0.00", "0", "USDT")
+
+                    +e("div")(class="row")
+                        +e("span")(class="parameter") Fee
+                        +e("div")(class="fee") 0.00 USDT
+
+                +b("button")(type="submit", class="button button_theme_red") Sell ETH
+
+// #.purchase

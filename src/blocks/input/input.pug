@@ -1,0 +1,20 @@
+include ../../core/bemto
+
+mixin input(value, placeholder, currency, isMarket, disabled)
+    - const plainDisable = disabled || null;
+    - const plainMarket = isMarket || null;
+
+    if plainMarket
+        +b("label")(class="input _market")
+            +e("div")(class="content")
+                +e("input")(type="number", value=value, placeholder=placeholder, disabled=plainDisable, class="field")
+                +e("span")(class="market") Market price
+
+            +e("span")(class="currency")= currency
+
+    else
+        +b("label")(class="input")
+            +e("div")(class="content")
+                +e("input")(type="number", value=value, placeholder=placeholder, class="field")
+
+            +e("span")(class="currency")= currency

@@ -24,11 +24,12 @@ block content
                 include ../blocks/trade-history/trade-history
 
         div(class="page__right")
-            div(class="page__order-book")
-                span Order book
+            div(class="page__trade")
+                div(class="page__order-book")
+                    span Order book
 
-            div(class="page__trade-history")
-                span Trade history
+                div(class="page__trade-history")
+                    span Trade history
 
             div(class="page__purchase")
-                span Purchase
+                include ../blocks/purchase/purchase

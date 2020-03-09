@@ -1,0 +1,44 @@
+@import "../../sass/_mixins/_rem"
+@import "../../sass/variables"
+
+.radio
+  position: relative
+
+  display: block
+  width: 100%
+
+.radio__field
+  position: absolute
+
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+  margin: auto
+
+  opacity: 0
+  cursor: pointer
+
+  &:checked + .radio__label
+    background-color: #1d3549
+
+  &:focus + .radio__label
+    background-color: #203a50
+
+.radio__label
+  width: 100%
+  display: block
+
+  color: $color-white
+  font-size: rem(12px)
+  font-weight: 500
+  line-height: 26px
+  text-align: center
+
+  border-radius: 2px
+  background-color: #1A2839
+
+  cursor: pointer
+  user-select: none
+  transition: .1s ease-out
