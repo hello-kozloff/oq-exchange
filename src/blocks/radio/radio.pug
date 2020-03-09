@@ -1,0 +1,6 @@
+include ../../core/bemto
+
+mixin radio(name, label)
+    +b("label")(class="radio")
+        +e("input")(type="radio", name=name, class="field")
+        +e("span")(class="label")= label
