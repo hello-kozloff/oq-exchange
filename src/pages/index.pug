@@ -5,6 +5,12 @@ block vars
     - const layout='exchange'
 
 block content
-    include ../blocks/header/header
-    include ../blocks/bunch-information/bunch-information
-    include ../blocks/trade-history/trade-history
+    div(class="page__header")
+        include ../blocks/header/header
+
+    div(class="page__bunch")
+        div(class="page__market")
+            include ../blocks/market-list/market-list
+
+        div(class="page__information")
+            include ../blocks/bunch-information/bunch-information
