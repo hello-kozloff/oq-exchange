@@ -14,3 +14,21 @@ block content
 
         div(class="page__information")
             include ../blocks/bunch-information/bunch-information
+
+    div(class="page__content")
+        div(class="page__left")
+            div(class="page__chart")
+                span Chat area
+
+            div(class="page__order-history")
+                include ../blocks/trade-history/trade-history
+
+        div(class="page__right")
+            div(class="page__order-book")
+                span Order book
+
+            div(class="page__trade-history")
+                span Trade history
+
+            div(class="page__purchase")
+                span Purchase
