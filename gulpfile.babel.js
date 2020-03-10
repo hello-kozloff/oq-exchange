@@ -127,7 +127,8 @@ gulp.task("build:vendor-style", () => {
   };
 
   return gulp.src([
-    "node_modules/normalize.css/normalize.css"
+    "node_modules/normalize.css/normalize.css",
+    "node_modules/jquery-nice-select/css/nice-select.css"
   ])
     .pipe(contact("vendor.css"))
     .pipe(gulp.dest("static/css"))
@@ -181,7 +182,8 @@ gulp.task("build:blocks-script", () => {
  */
 gulp.task("build:vendors-script", () => {
   return gulp.src([
-    "node_modules/jquery/dist/jquery.js"
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/jquery-nice-select/js/jquery.nice-select.js"
   ])
     .pipe(contact("vendor.js"))
     .pipe(gulp.dest("static/js"))
