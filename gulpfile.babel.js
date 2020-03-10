@@ -127,8 +127,7 @@ gulp.task("build:vendor-style", () => {
   };
 
   return gulp.src([
-    "node_modules/normalize.css/normalize.css",
-    "node_modules/jquery-nice-select/css/nice-select.css"
+    "node_modules/normalize.css/normalize.css"
   ])
     .pipe(contact("vendor.css"))
     .pipe(gulp.dest("static/css"))
@@ -298,6 +297,7 @@ gulp.task("build:production", () => {
 gulp.task("watch", () => {
   gulp.watch("src/blocks/**/*.js", gulp.series(buildingScripts));
   gulp.watch("src/blocks/**/*.sass", gulp.series(buildingStyles));
+  gulp.watch("src/blocks/**/*.scss", gulp.series(buildingStyles));
   gulp.watch("src/blocks/**/*.pug", gulp.series("build-pages"));
   gulp.watch("src/sass/**/*.sass", gulp.series(buildingStyles));
   gulp.watch("src/pages/**/*.pug", gulp.series("build-pages"));
