@@ -30,6 +30,4 @@ $(document).ready(() => {
     $(".order-book__area_sell").show();
   });
 
-  $(".order-book__select select").niceSelect();
-
 });
