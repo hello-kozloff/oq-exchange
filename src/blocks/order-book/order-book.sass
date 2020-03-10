@@ -1,0 +1,228 @@
+@import "../../sass/_mixins/_rem"
+@import "../../sass/variables"
+
+.order-book
+  height: 100%
+  background-color: #131E2A
+  border-right: 2px solid #0D151D
+  box-sizing: border-box
+
+.order-book__header
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+
+  padding: 10px 16px
+  box-sizing: border-box
+
+.order-book__heading
+  display: inline-block
+  margin-right: 8px
+
+  color: $color-white
+  font-size: rem(14px)
+  font-weight: 600
+  line-height: 20px
+  text-transform: capitalize
+
+  flex-shrink: 0
+
+.order-book__item
+  position: relative
+
+  .order-book__row
+    position: relative
+    z-index: 11
+
+.order-book__radio
+  position: absolute
+  z-index: 10
+
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+  width: auto
+  height: 24px
+
+  &_green
+    background-color: rgba($color-green, .2)
+
+  &_red
+    background-color: rgba($color-red, .2)
+
+.order-book__row
+  height: 24px
+
+  display: flex
+  flex-direction: row
+
+  &_heading
+    height: 36px
+
+    .order-book__column
+      padding: 12px 0
+
+      color: #697D94
+      font-size: rem(10px)
+      font-weight: 500
+      line-height: 12px
+      text-transform: uppercase
+      letter-spacing: 0.05em
+
+  &_content
+    padding: 6px 0
+    box-sizing: border-box
+
+.order-book__column
+  width: 100%
+  text-align: right
+
+  color: $color-white
+  font-size: rem(12px)
+  font-weight: 500
+  line-height: 12px
+
+  &_red
+    color: $color-red
+
+  &_green
+    color: $color-green
+
+  &:first-child
+    padding-left: 12px
+
+  &:last-child
+    padding-right: 12px
+
+.order-book__overflow
+  height: calc(100% - 36px - 46px - 12px)
+  margin-top: 3px
+  overflow: auto
+
+.order-book__content
+  height: 100%
+
+  display: flex
+  flex-direction: column
+
+.order-book__area
+  height: 100%
+  min-height: 100px
+
+  display: flex
+  flex-direction: column
+
+  overflow-y: hidden
+
+  &_sell
+    .order-book__main
+      margin-top: auto
+      display: flex
+      flex-direction: column-reverse
+
+    justify-content: flex-end
+
+  &_buy
+    .order-book__main
+      margin-bottom: auto
+
+.order-book__board
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  flex-shrink: 0
+
+  padding: 14px 12px 14px 16px
+  box-sizing: border-box
+
+  background-color: #0D151D
+
+  &_green
+    color: $color-green
+
+.order-book__price
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.order-book__price-count
+  font-size: rem(16px)
+  font-weight: 500
+  line-height: 20px
+
+.order-book__price-convert
+  color: #697D94
+  font-size: rem(12px)
+  font-weight: 500
+  line-height: 16px
+
+.order-book__price-percent
+  font-size: rem(12px)
+  font-weight: 500
+  line-height: 16px
+
+.order-book__views
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.order-book__view
+  width: 24px
+
+  padding: 5px 3px
+  box-sizing: border-box
+
+  border: 1px solid transparent
+  border-radius: 2px
+  background-color: transparent
+
+  outline: none
+  cursor: pointer
+
+  &:focus
+    box-shadow: 0 0 0 3px #1B2A3B
+
+  span
+    display: block
+
+    width: 100%
+    height: 2px
+
+    border-radius: 2px
+
+    &:not(:last-child)
+      margin-bottom: 2px
+
+  &:not(:first-child)
+    margin-left: 4px
+
+  &_selected
+    border: 1px solid #1B2A3B
+
+  &_buy
+    span
+      background-color: $color-green
+
+  &_split
+    span:nth-child(1),
+    span:nth-child(2)
+      background-color: $color-green
+
+    span:nth-child(3),
+    span:nth-child(4)
+      background-color: $color-red
+
+  &_sell
+    span
+      background-color: $color-red
+
+.order-book__select
+  .nice-select
+    max-width: 52px
+    width: 100%
+
+    margin: 0 5px

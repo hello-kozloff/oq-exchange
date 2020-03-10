@@ -181,7 +181,8 @@ gulp.task("build:blocks-script", () => {
  */
 gulp.task("build:vendors-script", () => {
   return gulp.src([
-    "node_modules/jquery/dist/jquery.js"
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/jquery-nice-select/js/jquery.nice-select.js"
   ])
     .pipe(contact("vendor.js"))
     .pipe(gulp.dest("static/js"))
@@ -296,6 +297,7 @@ gulp.task("build:production", () => {
 gulp.task("watch", () => {
   gulp.watch("src/blocks/**/*.js", gulp.series(buildingScripts));
   gulp.watch("src/blocks/**/*.sass", gulp.series(buildingStyles));
+  gulp.watch("src/blocks/**/*.scss", gulp.series(buildingStyles));
   gulp.watch("src/blocks/**/*.pug", gulp.series("build-pages"));
   gulp.watch("src/sass/**/*.sass", gulp.series(buildingStyles));
   gulp.watch("src/pages/**/*.pug", gulp.series("build-pages"));
