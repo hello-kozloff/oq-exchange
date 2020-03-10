@@ -1,0 +1,145 @@
+include ../../core/bemto
+
+// .order-book
++b("div")(class="order-book")
+    +e("div")(class="header")
+        +e("h3")(class="heading") Order book
+
+        +e("div")(class="select")
+            select
+                option .001
+                option .01
+
+        +e("div")(class="views")
+            +e("button")(type="button", class="view _buy")
+                span
+                span
+                span
+                span
+
+            +e("button")(type="button", class="view _split _selected")
+                span
+                span
+                span
+                span
+
+            +e("button")(type="button", class="view _sell")
+                span
+                span
+                span
+                span
+
+    +e("div")(class="row _heading")
+        +e("div")(class="column") Price USDT
+        +e("div")(class="column") Amount ETH
+        +e("div")(class="column") Total USDT
+
+    +e("div")(class="overflow")
+        +e("div")(class="content")
+            +e("div")(class="area _sell")
+                +e("div")(class="main")
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _red") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _red", style="width: 50%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _red") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _red", style="width: 40%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _red") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _red", style="width: 30%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _red") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _red", style="width: 20%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _red") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _red", style="width: 10%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _red") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _red", style="width: 5%;")
+
+            +e("div")(class="board _green")
+                +e("div")(class="price")
+                    +e("span")(class="price-count") 273.89
+                    +e("span")(class="price-convert") ≈$9,125.20
+
+                +e("span")(class="price-percent") +18.8%
+
+            +e("div")(class="area _buy")
+                +e("div")(class="main")
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _green") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _green", style="width: 50%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _green") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _green", style="width: 40%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _green") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _green", style="width: 30%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _green") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _green", style="width: 20%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _green") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _green", style="width: 10%;")
+
+                    +e("div")(class="item")
+                        +e("div")(class="row _content")
+                            +e("div")(class="column _green") 273.89
+                            +e("div")(class="column") 17.704780
+                            +e("div")(class="column") 17.704780
+
+                        +e("div")(class="radio _green", style="width: 5%;")
+// #.order-book
