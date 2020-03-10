@@ -25,4 +25,12 @@ $(document).ready(() => {
     $(".market-list__body").toggleClass("market-list__body_invisible");
   });
 
+  $(document).mouseup(function (e){
+    const div = $(".market-list__body");
+
+    if (!div.is(e.target) && div.has(e.target).length === 0 && !$(".market-list__body").hasClass("market-list__body_invisible")) {
+      $(".market-list__body").toggleClass("market-list__body_invisible");
+    }
+  });
+
 });
