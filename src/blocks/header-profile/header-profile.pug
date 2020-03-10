@@ -1,0 +1,29 @@
+include ../../core/bemto
+
++b("div")(class="header-profile")
+    +e("button")(type="button", class="button")
+        +e("img")(
+            src="https://sun9-71.userapi.com/c830308/v830308045/13f4f6/RwaDj5qlQwQ.jpg?ava=1",
+            class="avatar"
+        )
+
+        +e("div")(class="info")
+            +e("span")(class="username") HelloKozloff
+            +e("span")(class="email") hello.kozloff@gmail.com
+
+    +e("div")(class="content")
+        +e("div")(class="balance")
+            +e("span")(class="balance-value") 0.00 EUR
+            +e("span")(class="balance-label") Estimated account value
+
+        +e("div")(class="actions")
+            +b("a")(href="#", class="button") Deposit
+            +b("a")(href="#", class="button") Withdraw
+
+        +e("nav")(class="menu")
+            +e("a")(href="#", class="link") Funding Wallet
+            +e("a")(href="#", class="link") Spot Wallet
+            +e("a")(href="#", class="link") Open Orders
+            +e("a")(href="#", class="link") Order History
+
+        +e("a")(href="#", class="link") Log out

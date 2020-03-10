@@ -6,7 +6,16 @@ include ../../core/bemto
         +e("img")(src="images/logo.svg", class="logo lazyload")
         +e("span")(class="sitename") OQ Exchange
 
-    +e("div")(class="auth")
-        +b("a")(href="#", class="button") Log In
-        +b("a")(href="#", class="button _theme_blue") Get started
+    //+e("div")(class="auth")
+    //    +b("a")(href="#", class="button") Log In
+    //    +b("a")(href="#", class="button _theme_blue") Get started
+
+    +e("div")(class="profile")
+        include ../header-profile/header-profile
+
+    +e("div")(class="lang")
+        select
+            option English
+            option Russian
+            option China
 // #.header
