@@ -1,4 +1,6 @@
 .page_layout_exchange
+  min-width: 1180px
+
   .page__bunch
     display: flex
 
@@ -39,6 +41,9 @@
 
     border-left: 2px solid #0D151D
     box-sizing: border-box
+
+    @media screen and (max-width: 1440px)
+      max-width: 495px
 
   .page__trade
     height: calc(100% - 385px)
