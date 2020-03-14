@@ -86,12 +86,15 @@ include ../../core/bemto
 
                         +e("div")(class="radio _red", style="width: 5%;")
 
-            +e("div")(class="board _green")
+            +e("div")(class="board")
                 +e("div")(class="price")
-                    +e("span")(class="price-count") 273.89
+                    +e("span")(class="price-count _green")
+                        span 273.89
+                        +e("i")(class="icon icon-arrow-up")
+
                     +e("span")(class="price-convert") ≈$9,125.20
 
-                +e("span")(class="price-percent") +18.8%
+                +e("span")(class="price-percent _green") +18.8%
 
             +e("div")(class="area _buy")
                 +e("div")(class="main")
