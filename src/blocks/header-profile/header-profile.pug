@@ -1,5 +1,3 @@
-include ../../core/bemto
-
 +b("div")(class="header-profile")
     +e("button")(type="button", class="button")
         +e("img")(
@@ -19,8 +17,13 @@ include ../../core/bemto
             +e("span")(class="balance-label") Estimated account value
 
         +e("div")(class="actions")
-            +b("a")(href="#", class="button") Deposit
-            +b("a")(href="#", class="button") Withdraw
+            +b("a")(href="#", class="button")
+                i(class="icon-download")
+                span Deposit
+
+            +b("a")(href="#", class="button")
+                i(class="icon-upload")
+                span Withdraw
 
         +e("nav")(class="menu")
             +e("a")(href="#", class="link") Funding Wallet
@@ -28,4 +31,6 @@ include ../../core/bemto
             +e("a")(href="#", class="link") Open Orders
             +e("a")(href="#", class="link") Order History
 
-        +e("a")(href="#", class="link") Log out
+        +e("a")(href="#", class="link _logout")
+            i(class="icon-upload")
+            span Log out
