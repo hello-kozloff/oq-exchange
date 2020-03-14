@@ -13,10 +13,14 @@ mixin market-item(name)
         +e("div")(class="current-currency")
             +market-item("ETH / USDT")
 
-        +e("button")(type="button", class="button") Market
+        +e("button")(type="button", class="button")
+            span Market
+            +e("i")(class="icon icon-chevron-down")
 
     +e("div")(class="body _invisible")
-        +e("input")(type="text", placeholder="Search", class="search")
+        +e("div")(class="search-wrapper")
+            +e("input")(type="text", placeholder="Search", class="search")
+
         +e("div")(class="tabs")
             +e("button")(type="button", target-id="market-list-eth", class="tab _selected") ETH
             +e("button")(type="button", target-id="market-list-usdt", class="tab") USDT

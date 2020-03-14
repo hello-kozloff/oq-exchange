@@ -20,17 +20,23 @@ $(document).ready(() => {
   });
 
   $(".market-list__button").on("click", function (e) {
-    e.preventDefault();
-
-    $(".market-list__body").toggleClass("market-list__body_invisible");
+    toggleMarketList();
   });
 
   $(document).mouseup(function (e){
-    const div = $(".market-list__body");
+    const div = $(".market-list");
 
     if (!div.is(e.target) && div.has(e.target).length === 0 && !$(".market-list__body").hasClass("market-list__body_invisible")) {
-      $(".market-list__body").toggleClass("market-list__body_invisible");
+      toggleMarketList();
     }
   });
+
+  /**
+   * The function toggle market list.
+   */
+  function toggleMarketList() {
+    $(".market-list__icon").toggleClass("market-list__icon_toggle");
+    $(".market-list__body").toggleClass("market-list__body_invisible");
+  }
 
 });
