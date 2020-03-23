@@ -1,0 +1,141 @@
+extends ./contains/default
+
+block vars
+    - const title='Fees'
+    - const layout='fees'
+
+block content
+    div(class="page__container")
+        div(class="page__content page__seo")
+            div(class="page__wrapper")
+                h1 Fee Structure
+
+                p
+                    strong The Maker and Taker base transaction fees for all trading pairs are 0.1%.
+
+                    br
+                    br
+
+                    | Want to get more trading fee discount/s? In order to show our appreciation for the continued support received from our users, Oqex is now launching a new Tiered Trading Fee Discount Program.
+
+                h2 Program rules
+
+                ul
+                    li
+                        span At 00:00 AM (UTC +01:00) every day, Oqex will snapshot users’ CGT holdings and their total trading volume over the past 30-day period (equivalent to BTC).
+                    li
+                        span Users need to meet any one of the listed requirements to reach a specific Tier level and enjoy the corresponding trading fees.
+
+                    li
+                        span Users need to meet any one of the listed requirements to reach a specific Tier level and enjoy the corresponding trading fees.
+
+                    li
+                        span Users need to meet any one of the listed requirements to reach a specific Tier level and enjoy the corresponding trading fees.
+
+            table
+                thead
+                    tr
+                        th 30-day volume (BTC)
+                        th Maker
+                        th Taker
+
+                tbody
+                    tr
+                        th 0 – 0.5 BTC
+                        th 0.1%
+                        th 0.1%
+
+                    tr
+                        th 0.5 – 1 BTC
+                        th 0.075%
+                        th 0.1%
+
+                    tr
+                        th 1 – 100 BTC
+                        th 0.07%
+                        th 0.1%
+
+                    tr
+                        th 100 – 300 BTC
+                        th 0.065%
+                        th 0.1%
+
+                    tr
+                        th 300 – 1000 BTC
+                        th 0.0575%
+                        th 0.07%
+
+                    tr
+                        th 300 – 1000 BTC
+                        th 0.0575%
+                        th 0.07%
+
+                    tr
+                        th 3000 – 8100 BTC
+                        th 0.0425%
+                        th 0.06%
+
+                    tr
+                        th 8100 – 20000 BTC
+                        th 0.035%
+                        th 0.06%
+
+                    tr
+                        th 45000 – 92000 BTC
+                        th 0.0275%
+                        th 0.05%
+
+                    tr
+                        th 92000+ BTC
+                        th 0.002%
+                        th 0.04%
+
+            div(class="page__wrapper")
+                p(class="note") <strong>Note:</strong> A Hidden Order always pays the taker fee. An Iceberg Order pays the taker fee until the hidden quantity is completely executed.
+
+                h2 Withdrawal Fee
+
+                p We will adjust the withdrawal fees according to the cryptocurrency market’s performance.
+
+            table
+                thead
+                    tr
+                        th Cryptocurrency
+                        th Withdraw
+                        th Min. Withdraw
+
+                tbody
+                    tr
+                        th BTC
+                        th 0.001
+                        th 0.004
+
+                    tr
+                        th ETH
+                        th 0.01
+                        th 0.02
+
+                    tr
+                        th USDT
+                        th 5
+                        th 10
+
+                    tr
+                        th XRP
+                        th 0.5
+                        th 25
+
+                    tr
+                        th LTC
+                        th 0.001
+                        th 0.002
+
+                    tr
+                        th TRX
+                        th 1
+                        th 10
+
+                    tr
+                        th ERC-20 TOKENS
+                        th 0.01 ETH
+                        th 0.02 ETH

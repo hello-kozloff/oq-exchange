@@ -1,5 +1,124 @@
+@import "../../sass/_mixins/rem"
+
+.page__seo
+  color: #000000
+  font-family: "Ubuntu", sans-serif
+
+  h1, h2, h3, h4, h5
+    margin: 16px 0
+    font-weight: bold
+
+  h1
+    font-size: rem(28px)
+
+  h2
+    margin: 24px 0
+    font-size: rem(20px)
+
+  h3
+    font-size: rem(18px)
+
+  h4
+    font-size: rem(16px)
+
+  h5
+    font-size: rem(14px)
+
+  strong
+    font-weight: bold
+
+  p
+    margin: 1rem 0
+
+    font-size: rem(14px)
+    line-height: 20px
+
+  ul
+    padding-left: 1.1rem
+    margin: 24px 0
+
+    color: #1371FF
+    list-style: disc
+
+    span
+      color: #000000
+
+    li
+      line-height: 20px
+
+      &:not(:last-child)
+        margin-bottom: 12px
+
+  table
+    width: 100%
+    margin: 24px 0
+
+    color: #333333
+    font-size: rem(14px)
+    line-height: 20px
+    text-align: left
+
+    border-radius: 20px
+    background-color: #F7F9FA
+
+    thead
+      tr:first-child th
+        padding-top: 20px
+        padding-bottom: 10px
+
+      th
+        color: #697D94
+        font-size: rem(10px)
+        letter-spacing: 0.05em
+        text-transform: uppercase
+
+    tbody
+      tr:last-child th
+        padding-bottom: 20px
+
+      th
+        padding: 8px 0
+
+    tr
+      th
+        &:first-child
+          padding-left: 20px
+
+        &:last-child
+          padding-right: 20px
+
+  .note
+    margin-bottom: 52px
+
+    color: #666666
+    font-size: rem(12px)
+
+.page_layout_fees
+  .page__container
+    max-width: 1200px
+    width: 100%
+
+    margin: 0 auto
+    padding-left: 100px
+    box-sizing: border-box
+
+    @media screen and (max-width: 1200px)
+      max-width: 100%
+
+      padding: 0 15px
+      box-sizing: border-box
+
+  .page__content
+    max-width: calc(588px + 20px + 20px)
+    width: 100%
+
+  .page__wrapper
+    padding: 0 20px
+    box-sizing: border-box
+
 .page_layout_exchange
   min-width: 1180px
+  background-color: $background-color
 
   .page__bunch
     display: flex
